@@ -1,0 +1,11 @@
+cmake_minimum_required(VERSION 3.0.0)
+
+include_directories(${inc_path})
+
+set(EXECUTABLE_OUTPUT_PATH ${CMAKE_CURRENT_SOURCE_DIR})
+
+link_directories(${lib_path})
+
+link_libraries(${lib_name})
+
+add_executable(example main.cpp)
